@@ -1,0 +1,22 @@
+{
+  "name": "simple-faq-question",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsnooshin/simple-FAQ-Question.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsnooshin/simple-FAQ-Question/issues"
+  },
+  "homepage": "https://github.com/itsnooshin/simple-FAQ-Question#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
