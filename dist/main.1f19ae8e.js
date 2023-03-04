@@ -183,6 +183,22 @@ module.hot.accept(reloadCSS);
 
 require("./CSS/style.css");
 require("../node_modules/normalize.css");
+// seleceting Elements
+
+var questions = document.querySelectorAll(".question-section");
+// hide the elements
+
+questions.forEach(function (question) {
+  var btn = question.querySelector(".btn-icon");
+  btn.addEventListener("click", function () {
+    questions.forEach(function (qs) {
+      if (qs !== question) {
+        qs.classList.remove("show-text");
+      }
+    });
+    question.classList.toggle("show-text");
+  });
+});
 },{"./CSS/style.css":"CSS/style.css","../node_modules/normalize.css":"../node_modules/normalize.css/normalize.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -208,7 +224,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "5851" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "5575" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
