@@ -1,5 +1,4 @@
-import "./CSS/style.css";
-import "../node_modules/normalize.css";
+
 // seleceting Elements
 
 const questions = document.querySelectorAll(".question-section");
