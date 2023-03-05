@@ -2,9 +2,9 @@
   "name": "simple-faq-question",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel serve src/index.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
